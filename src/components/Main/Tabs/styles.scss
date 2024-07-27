@@ -1,0 +1,85 @@
+.tabsBlock{
+    .tabsContainer{
+        display: flex;
+        @media screen and (max-width: 550px){
+            flex-direction: row;
+            column-gap: 20px;
+            padding: 20px 0;
+            height: 300px;
+        }
+    }
+    .blockTabs{
+        display: flex;
+        column-gap: 50px;
+        @media screen and (max-width: 550px){
+            flex-direction: column;
+            row-gap: 30px;
+            // align-items: center;
+        }
+        .tabs{
+            padding: 5px;
+            border-radius: 6px;
+            border: 1px solid #fff500;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            &.active{
+                background: #fff500;
+                color: black;
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: -5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: calc(100% + 2px);
+                    height: 5px;
+                }
+            }
+            &:hover{
+                background: #fff500;
+                color: black;
+            }
+        }
+        
+    }
+    .contentTabs{
+        @media screen and (max-width: 550px){
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        
+        .content{
+            padding-top: 20px;
+            width: 100%;
+            height: 150px;
+            display: none;
+            &.activeContent{
+                display: block;
+            }
+            @media screen and (max-width: 420px){
+                height: 200px;
+            }
+            @media screen and (max-width: 390px){
+                height: 100%;
+            }
+            h2{
+                text-align: center;
+                @media screen and (max-width: 550px){
+                    font-size: 18px;
+                    text-align: start;
+                    margin: 5px 0;
+                }
+            }
+            p{
+                text-align: center;
+                @media screen and (max-width: 550px){
+                    font-size: 14px;
+                    text-align: start;
+                }
+            }
+        }
+        
+    }
+}
