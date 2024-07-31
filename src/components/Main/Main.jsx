@@ -39,7 +39,8 @@ import slimftBefore from "../../images/slimftBefore.png";
 import slimftAfter from "../../images/slimftAfter.png";
 import growBefore from "../../images/geowBefore.png";
 import growAfter from "../../images/growAfter.png";
-
+import sustaflexAfter from "../../images/sustaflexAfter.png";
+import sustaflexBefore from "../../images/sustaflexBefore.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -156,6 +157,13 @@ function Main() {
       imgBefore: growBefore,
       imgAfter: growAfter,
       sideTitle: "GrowX",
+      sideSubtitle: `${t("blocks.mainBlock.sale")}`,
+    },
+    {
+      id: 9,
+      imgBefore: sustaflexBefore,
+      imgAfter: sustaflexAfter,
+      sideTitle: "Сустафлекс",
       sideSubtitle: `${t("blocks.mainBlock.sale")}`,
     },
   ];

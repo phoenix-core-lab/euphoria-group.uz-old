@@ -10,7 +10,7 @@ import mensBefore from "../../../images/mensAfter.png";
 import ParazitOFFBefore from "../../../images/ParazitOFFBefore.png";
 import slimftBefore from "../../../images/slimftBefore.png";
 import growBefore from "../../../images/geowBefore.png";
-
+import sustaflexBefore from "../../../images/sustaflexBefore.png";
 import "swiper/css";
 import ProductsCard from "../ProductsCard";
 import { useTranslation } from "react-i18next";
@@ -67,6 +67,13 @@ const ProductSlider = () => {
       description: `${t("blocks.productsBlock.description8")}`,
       cardImage: growBefore,
       imageAlt: "Power",
+    },
+    {
+      id: 8,
+      title: "Сустафлекс",
+      description: `${t("blocks.productsBlock.description8")}`,
+      cardImage: sustaflexBefore,
+      imageAlt: "sustaflexBefore",
     },
   ];
   return (
